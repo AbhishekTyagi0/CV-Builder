@@ -1,0 +1,9 @@
+.personalDetailSection{
+
+    display: flex;
+    border: 1px solid black;
+    margin: 0 12px 12px 0;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,40 @@
+
+.inputPersonalInfo{
+
+    width: 330px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 5px 5px 10px;
+    border: none;
+    background-color: #EFF2F9;
+    color: grey;
+    border-radius: 3px;
+}
+
+.inputPersonalInfo:focus{
+    /* width: 50%; */
+    /* transition: width 0.4s ease-in-out; */
+    color: rgb(87, 85, 85);
+    outline: none;
+    border-bottom: 2px solid rgb(196, 66, 196);
+}
+
+.personalInfoSection{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.fullName{
+    width: 100%;
+    display: flex;
+    gap: 120px;
+}
+
+.fullName>div{
+
+    display: flex;
+    flex-direction: column;
+}
