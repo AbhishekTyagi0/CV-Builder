@@ -1,5 +1,8 @@
 import React from "react";
 import "../style/personalInfo.css";
+import InputField from "./inputfield";
+
+
 
 export default function PersonalDetailsInput(props) {
   const inputHandler = (e) => {
@@ -12,21 +15,6 @@ export default function PersonalDetailsInput(props) {
     });
   };
 
-  const InputField = ({ label, type, name, inputHandler }) => (
-    <div>
-      <h4>{label}</h4>
-      <input
-        type={type}
-        name={name}
-        onChange={(e) => {
-          inputHandler(e);
-        }}
-        value={props.dataValues[name]}
-        className="inputPersonalInfo"
-      />
-    </div>
-  );
-
   return (
     <div className="personalInfoSection">
       <section className="fullName">
@@ -35,12 +23,14 @@ export default function PersonalDetailsInput(props) {
           type="text"
           name="title"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
         <InputField
           label="LinkedIn"
           type="email"
-          name="email"
+          name="linkedin"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
       </section>
 
@@ -50,12 +40,14 @@ export default function PersonalDetailsInput(props) {
           type="text"
           name="fname"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
         <InputField
           label="Last Name"
           type="text"
           name="lname"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
       </section>
 
@@ -65,42 +57,48 @@ export default function PersonalDetailsInput(props) {
           type="email"
           name="email"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
         <InputField
           label="Phone Number"
           type="tel"
           name="phone"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
       </section>
 
       <section className="fullName">
         <InputField
           label="Country"
-          type="email"
-          name="email"
+          type="country"
+          name="country"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
         <InputField
           label="City"
-          type="tel"
-          name="phone"
+          type="city"
+          name="city"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
       </section>
 
       <section className="fullName">
         <InputField
           label="Address"
-          type="email"
-          name="email"
+          type="text"
+          name="address"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
         <InputField
           label="Pin Code"
-          type="tel"
-          name="phone"
+          type="number"
+          name="pincode"
           inputHandler={inputHandler}
+          value={props.dataValues}
         />
       </section>
     </div>
