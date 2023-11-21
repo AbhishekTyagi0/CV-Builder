@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import Input from "./Input";
 import Cvoutput from "./cvoutput";
+import Experience from "./experience/experiencedata";
 
 const CVData = () => {
   const [dataValues, setDataValues] = useState({});
-  // const [data, setData] = useState(0);
+  const [postText, setPostText] = useState('');
+  const [experience, setExperience] = useState('');
 
-  const data = 0;
-  const changeFunc = (value) => {
-    data = value;
-  };
 
   return (
-    <div>
+    <div className="mainContainer">
       <div className="userInput">
-        <Input dataValues={dataValues} setDataValues={setDataValues} change = {changeFunc}/>
+        <Input dataValues={dataValues} setDataValues={setDataValues} postText={postText} setPostText={setPostText}/>
+        <Experience experience={experience} setExperience={setExperience}/>
       </div>
       <div className="userOutput">
-        <Cvoutput dataValues={dataValues} setDataValues={setDataValues} />
+        <Cvoutput dataValues={dataValues} setDataValues={setDataValues} postText={postText} setPostText={setPostText}/>
       </div>
     </div>
   );

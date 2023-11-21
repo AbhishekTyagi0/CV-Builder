@@ -2,12 +2,10 @@ import React from "react";
 import "../style/personalInfo.css";
 import InputField from "./inputfield";
 
-
-
 export default function PersonalDetailsInput(props) {
   const inputHandler = (e) => {
     props.setDataValues((previousState) => {
-      console.log("Event Data", e.target, previousState);
+      // console.log("Event Data", e.target, previousState);
       return {
         ...previousState,
         [e.target.name]: e.target.value,
@@ -99,7 +97,7 @@ export default function PersonalDetailsInput(props) {
           name="pincode"
           inputHandler={inputHandler}
           value={props.dataValues}
-        />
+          />
       </section>
     </div>
   );

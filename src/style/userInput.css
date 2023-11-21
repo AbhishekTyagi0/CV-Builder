@@ -1,9 +1,33 @@
 .personalDetailSection{
 
     display: flex;
-    border: 1px solid black;
-    margin: 0 12px 12px 0;
+    margin: 0 1.2rem 1.2rem 0;
     height: auto;
     flex-direction: column;
     gap: 20px;
+}
+
+.textInputAreaBox{
+    
+    width: 92.5%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    background-color: #EFF2F9;
+    border-radius: 6px;
+
+}
+
+.textInputAreaBox:focus{
+    color: rgb(87, 85, 85);
+    outline: none;
+    border-bottom: 3px solid rgb(196, 66, 196);
+    background-color: #EFF2F9;
+}
+
+
+.inputexptag{
+
+    width: 6px;
 }

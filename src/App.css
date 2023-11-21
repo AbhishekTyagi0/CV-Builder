@@ -1,29 +1,30 @@
-
-.userInput{
-
-    width:50vw;
-    height: 75vh;
-    border-right: 1px solid grey;
+.userInput {
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  border-right: 1px solid grey;
+  padding: 22px;
 }
-.userOutput{
-
-    width:50vw;
-    height: 75vh;
-}
-
-.mainContainer{
-
-    display: flex;
-    height: 82vh;
-    padding: 22px;
+.userOutput {
+  width: 50vw;
+  height: 90vh;
+  background-color: white;
+  border-radius: 9px;
+  padding: 40px;
+  border: 1px solid grey;
+  margin: 4rem;
 }
 
+.mainContainer {
+  background-color: cadetblue;
+  display: flex;
+  height: 100vh;
+}
 
-footer{
-
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    background-color: grey;
-    align-items: center;
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  align-items: center;
 }

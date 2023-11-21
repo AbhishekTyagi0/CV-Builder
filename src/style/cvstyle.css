@@ -1,0 +1,34 @@
+
+
+.cvContainer{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv-detail-field{
+
+    color: #3C78D8;
+    font-weight: bold;
+    text-align: right;
+}
+
+.cvHeading>h1{
+
+   color: #3C78D8;
+   font-size: 3rem;
+   /* font-size: 3vw; */
+}
+
+.cvHeading>h3{
+    
+    color: #3C78D8;
+    font-size: 1.8rem;
+}
+
+
+.userTextOutput>p{
+
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
