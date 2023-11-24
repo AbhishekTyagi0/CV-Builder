@@ -11,9 +11,9 @@ function TextAreaInput(props) {
   };
 
   return (
-    <div >
+    <div>
       <textarea
-      className="textInputAreaBox"
+        className="textInputAreaBox"
         name="textArea"
         id="inputText"
         cols="72"

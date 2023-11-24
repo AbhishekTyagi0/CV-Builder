@@ -10,8 +10,6 @@ export default function Heading(){
     <>
       <h1>CV Builder</h1>
       <CVData />
-
-      <footer><h2>Copyrigth &copy; All rights reserved</h2></footer>
     </>
   )
 }

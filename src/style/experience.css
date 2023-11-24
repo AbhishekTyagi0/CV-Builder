@@ -1,0 +1,11 @@
+.experienceContainer {
+  display: flex;
+  justify-content: space-between;
+  color: #3c78d8;
+  margin-top: 1.5rem;
+}
+
+.experienceTime {
+  display: flex;
+  align-items: flex-end;
+}

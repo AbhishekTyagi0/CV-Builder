@@ -23,7 +23,7 @@ function Experience(props) {
     props.setExperience((previous) => {
       return {
         ...previous,
-        [e.target.name]: e.target.value,
+        [e.target.name]: props.experience,
       };
     });
   };
