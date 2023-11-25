@@ -5,9 +5,9 @@ const InputEducation = ({ title, type, name, value, inputHandler }) => {
       <input
         type={type}
         name={name}
-        value={value[name]}
+        value={value[name] || ''}
         onChange={(e) => {
-          inputHandler(e.target.value);
+          inputHandler(e);
         }}
       />
     </div>

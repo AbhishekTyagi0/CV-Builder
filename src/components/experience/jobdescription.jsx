@@ -53,5 +53,4 @@ function JobInput(props) {
   );
 }
 
-
 export default JobInput;
