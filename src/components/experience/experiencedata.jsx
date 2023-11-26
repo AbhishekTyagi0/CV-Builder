@@ -11,7 +11,7 @@ function InputExperience({ title, type, name, inputHandler, value }) {
       onChange={(e) => {
         inputHandler(e);
       }}
-      value={value[name]}
+      value={value[name]||''}
       className="inputPersonalInfo"
     />
   </div>
@@ -20,10 +20,11 @@ function InputExperience({ title, type, name, inputHandler, value }) {
 
 function Experience(props) {
   const inputHandler = (e) => {
+    console.log("experience testing", e.target)
     props.setExperience((previous) => {
       return {
         ...previous,
-        [e.target.name]: props.experience,
+        [e.target.name]: e.target.value
       };
     });
   };
@@ -31,6 +32,7 @@ function Experience(props) {
   return (
     <div className="personalInfoSection">
       <h2>Professional Experience</h2>
+      <hr />
       <section className="fullName">
         <InputExperience
           title="Job Title"

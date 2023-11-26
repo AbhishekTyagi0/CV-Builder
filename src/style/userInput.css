@@ -31,3 +31,14 @@
 
     width: 6px;
 }
+
+
+.buttons{
+
+    width: 8rem;
+    padding: .3rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-right: 4rem;
+    align-self: end;
+  }

@@ -38,9 +38,11 @@ export default function Education(props) {
         onSubmit={(e) => {
           submitForm(e);
         }}
+        className="personalInfoSection"
       >
-        <div>
-          <h2>Education</h2>
+        <h2 className="personalDetailHeading">Education</h2>
+        <hr />
+        <div className="fullName">
           <InputEducation
             title="Institute"
             type="text"
@@ -48,8 +50,6 @@ export default function Education(props) {
             inputHandler={inputHandler}
             value={props.education}
           />
-        </div>
-        <div>
           <InputEducation
             title="Degree"
             type="text"
@@ -58,7 +58,7 @@ export default function Education(props) {
             value={props.education}
           />
         </div>
-        <div>
+        <div className="fullName">
           <InputEducation
             title="Start Date"
             type="date"
@@ -66,6 +66,7 @@ export default function Education(props) {
             inputHandler={inputHandler}
             value={props.education}
           />
+       
           <InputEducation
             title="End Date"
             type="date"
@@ -74,7 +75,7 @@ export default function Education(props) {
             value={props.education}
           />
         </div>
-        <div>
+        <div className="fullName">
           <InputEducation
             title="Location"
             type="text"
@@ -83,7 +84,7 @@ export default function Education(props) {
             value={props.education}
           />
         </div>
-        <button type="submit">Add</button>
+        <button type="submit" className="buttons" >Add</button>
       </form>
 
       <div>
@@ -98,6 +99,7 @@ export default function Education(props) {
                   onClick={() => {
                     deleteEducation(list.id);
                   }}
+                  className="buttons"
                 >
                   X
                 </button>

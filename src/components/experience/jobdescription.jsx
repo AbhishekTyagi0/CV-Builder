@@ -1,7 +1,4 @@
-
 function JobInput(props) {
-
-
   const addJob = (e) => {
     e.preventDefault();
     props.setItem((previous) => {
@@ -18,9 +15,12 @@ function JobInput(props) {
 
   return (
     <>
-      <form onSubmit={addJob}>
+      <form onSubmit={addJob} className="form-submit">
         <div>
+          <h2>Responsibilities</h2>
+          
           <textarea
+            className="textInputAreaBox"
             id="jobdescription"
             cols="30"
             rows="5"
@@ -28,7 +28,7 @@ function JobInput(props) {
             value={props.aboutJob}
           ></textarea>
         </div>
-        <button type="submit">Add</button>
+        <button type="submit" className="buttons">Add</button>
       </form>
 
       <div>
@@ -41,6 +41,7 @@ function JobInput(props) {
                   onClick={() => {
                     deleteBtn(item.id);
                   }}
+                  className="buttons"
                 >
                   X
                 </button>

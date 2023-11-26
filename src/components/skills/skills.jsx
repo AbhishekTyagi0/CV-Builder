@@ -18,7 +18,10 @@ export default function Skills(props) {
 
   return (
     <>
-      <form onSubmit={submitSkills}>
+      <form onSubmit={submitSkills} className="form-submit">
+        <h3>Skills</h3>
+        <hr />
+        <section className="skills-section">
         <SkillInput
           type="text"
           name="skill"
@@ -26,10 +29,12 @@ export default function Skills(props) {
           inputHandler={(e) => {
             props.setSkills(e.target.value);
           }}
-        />
-        <button type="submit">Add Skills</button>
-      </form>
 
+        />
+        <button type="submit" className="buttons">Add Skills</button>
+        </section>
+      </form>
+      
       <div>
         <ul>
           {props.addSkills.map((skill) => {

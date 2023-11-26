@@ -1,14 +1,15 @@
 const InputEducation = ({ title, type, name, value, inputHandler }) => {
   return (
     <div>
-      <h2>{title}</h2>
+      <h4>{title}</h4>
       <input
         type={type}
         name={name}
         value={value[name] || ''}
-        onChange={(e) => {
+        onChange={(e) => {  
           inputHandler(e);
         }}
+        className="inputPersonalInfo"
       />
     </div>
   );

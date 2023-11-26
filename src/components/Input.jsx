@@ -13,6 +13,7 @@ export default function Input({
   return (
     <div className="personalDetailSection">
       <h2 className="personalDetailHeading">Personal Details</h2>
+      <hr />
       <section>
         <PersonalDetailsInput
           dataValues={dataValues}
