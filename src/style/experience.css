@@ -23,3 +23,28 @@
   display: flex;
   justify-content: space-between;
 }
+
+.list-style{
+
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.list-style>button{
+  margin-left: 1rem;
+  border-radius: 50%;
+  width: 2.5rem;
+
+}
+
+.list-style>button:hover{
+  background-color: red;
+  color: #eee;
+  border: 2px solid rgb(101, 23, 23);
+}
+
+.job-desc-output{
+
+  margin: 1.5rem;
+}

@@ -1,7 +1,7 @@
 export default function JobOutput(props) {
   return (
     <div>
-      <ul>
+      <ul className="job-desc-output">
         {props.item.map((item) => {
           return (
             <li key={item.id}>

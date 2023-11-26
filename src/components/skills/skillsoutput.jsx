@@ -2,9 +2,9 @@ import React from 'react'
 
 function SkillsOutput(props) {
   return (
-    <div>
-      <h3>Areas of Expertise</h3>
-      <ul>
+    <div className='skill-output'>
+      <h2>Areas of Expertise</h2>
+      <ul className='skill-output-list'>
         {props.addSkills.map(skill=>{
             return(
         <li key={skill.id}>

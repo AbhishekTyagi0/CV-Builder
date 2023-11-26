@@ -5,7 +5,7 @@ const Cvoutput = (props) => {
   <>
 <section className="cvContainer">
   <div className="cvHeading">
-    <h1>{props.dataValues.fname + ' '+props.dataValues.lname}</h1>
+    <h1>{props.dataValues.fname + ' ' + props.dataValues.lname}</h1>
     <h3>{props.dataValues.title}</h3>
     </div>
     <div className="cv-detail-field">

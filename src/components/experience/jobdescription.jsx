@@ -35,7 +35,7 @@ function JobInput(props) {
         <ul>
           {props.item.map((item) => {
             return (
-              <li key={item.id}>
+              <li key={item.id} className="list-style">
                 <p>{item.title}</p>
                 <button
                   onClick={() => {
