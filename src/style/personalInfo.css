@@ -1,38 +1,53 @@
-
-.inputPersonalInfo{
-
-    width: 260px;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 5px 5px 5px 10px;
-    border: none;
-    background-color: #EFF2F9;
-    color: grey;
-    border-radius: 3px;
+.inputPersonalInfo {
+  width: 260px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 5px 5px 10px;
+  border: none;
+  background-color: #eff2f9;
+  color: grey;
+  border-radius: 3px;
 }
 
-.inputPersonalInfo:focus{
-    color: rgb(87, 85, 85);
-    outline: none;
-    border-bottom: 2px solid rgb(196, 66, 196);
+.inputPersonalInfo:focus {
+  color: rgb(87, 85, 85);
+  outline: none;
+  border-bottom: 2px solid rgb(196, 66, 196);
 }
 
-.personalInfoSection{
-    
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    
+.personalInfoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.fullName{
-    width: 100%;
-    display: flex;
-    gap: 120px;
+.fullName {
+  width: 100%;
+  display: flex;
+  gap: 120px;
 }
 
-.fullName>div{
+.fullName > div {
+  display: flex;
+  flex-direction: column;
+}
 
-    display: flex;
-    flex-direction: column;
+@media (max-width: 1350px) {
+  .inputPersonalInfo {
+    max-width: 200px;
+    font-size: 12px;
+  }
+  .fullName {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .inputPersonalInfo {
+    max-width: 120px;
+    font-size: 8px;
+  }
+  .fullName {
+    gap: 20px;
+  }
 }

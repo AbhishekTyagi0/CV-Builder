@@ -1,44 +1,66 @@
-.personalDetailSection{
-
-    display: flex;
-    margin: 0 1.2rem 1.2rem 0;
-    height: auto;
-    flex-direction: column;
-    gap: 2rem;
+.personalDetailSection {
+  display: flex;
+  margin: 0 1.2rem 1.2rem 0;
+  height: auto;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.textInputAreaBox{
-    
-    width: 92.5%;
-    padding: 1rem;
-    font-size: 1.6rem;
-    outline: none;
-    border: none;
-    background-color: #EFF2F9;
-    border-radius: 6px;
-
+.textInputAreaBox {
+  width: 92.5%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  background-color: #eff2f9;
+  border-radius: 6px;
 }
 
-.textInputAreaBox:focus{
-    color: rgb(87, 85, 85);
-    outline: none;
-    border-bottom: 3px solid rgb(196, 66, 196);
-    background-color: #EFF2F9;
+.textInputAreaBox:focus {
+  color: rgb(87, 85, 85);
+  outline: none;
+  border-bottom: 3px solid rgb(196, 66, 196);
+  background-color: #eff2f9;
 }
 
-
-.inputexptag{
-
-    width: 6px;
+.inputexptag {
+  width: 6px;
 }
 
+.buttons {
+  width: 8rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-right: 4rem;
+  align-self: end;
+}
 
-.buttons{
+.skill-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 140px;
+}
 
-    width: 8rem;
-    padding: .3rem;
-    font-size: 1rem;
-    font-weight: bolder;
-    margin-right: 4rem;
-    align-self: end;
+.skill-list > li {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1350px) {
+  .textInputAreaBox {
+    font-size: 1.1rem;
   }
+}
+@media (max-width: 400px) {
+  .textInputAreaBox {
+    font-size: 0.7rem;
+  }
+  .buttons {
+    width: 5rem;
+    padding: 0.15rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+}

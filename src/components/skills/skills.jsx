@@ -12,7 +12,7 @@ export default function Skills(props) {
 
   const deleteSkills = (id) => {
     props.setAddSkills((skill) => {
-      return skill.filter(skill => skill.id !== id);
+      return skill.filter((skill) => skill.id !== id);
     });
   };
 
@@ -22,21 +22,22 @@ export default function Skills(props) {
         <h3>Skills</h3>
         <hr />
         <section className="skills-section">
-        <SkillInput
-          type="text"
-          name="skill"
-          value={props.skills}
-          inputHandler={(e) => {
-            props.setSkills(e.target.value);
-          }}
-
-        />
-        <button type="submit" className="buttons">Add Skills</button>
+          <SkillInput
+            type="text"
+            name="skill"
+            value={props.skills}
+            inputHandler={(e) => {
+              props.setSkills(e.target.value);
+            }}
+          />
+          <button type="submit" className="buttons">
+            Add Skills
+          </button>
         </section>
       </form>
-      
+
       <div>
-        <ul>
+        <ul className="skill-list">
           {props.addSkills.map((skill) => {
             return (
               <li key={skill.id}>

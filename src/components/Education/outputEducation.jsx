@@ -6,7 +6,7 @@ export default function OutputEducation(props) {
         return (
           <li key={list.id}>
             <section>
-              <div>
+              <div className="institute-name">
                 <h3>{list.title + ", " + list.location}</h3>
                 <div className="education-output-degree">
                   <h3>{list.degree}</h3>
