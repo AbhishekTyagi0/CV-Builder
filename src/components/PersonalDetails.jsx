@@ -68,23 +68,6 @@ export default function PersonalDetailsInput(props) {
 
       <section className="fullName">
         <InputField
-          label="Country"
-          type="country"
-          name="country"
-          inputHandler={inputHandler}
-          value={props.dataValues}
-        />
-        <InputField
-          label="City"
-          type="city"
-          name="city"
-          inputHandler={inputHandler}
-          value={props.dataValues}
-        />
-      </section>
-
-      <section className="fullName">
-        <InputField
           label="Address"
           type="text"
           name="address"
@@ -97,7 +80,7 @@ export default function PersonalDetailsInput(props) {
           name="pincode"
           inputHandler={inputHandler}
           value={props.dataValues}
-          />
+        />
       </section>
     </div>
   );

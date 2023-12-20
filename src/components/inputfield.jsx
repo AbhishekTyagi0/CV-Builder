@@ -7,12 +7,10 @@ const InputField = ({ label, type, name, inputHandler, value }) => (
       onChange={(e) => {
         inputHandler(e);
       }}
-      value={value[name] || ''}
+      value={value[name] || ""}
       className="inputPersonalInfo"
     />
   </div>
 );
 
 export default InputField;
-
-

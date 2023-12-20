@@ -18,7 +18,7 @@ function JobInput(props) {
       <form onSubmit={addJob} className="form-submit">
         <div>
           <h2>Responsibilities</h2>
-          
+
           <textarea
             className="textInputAreaBox"
             id="jobdescription"
@@ -28,7 +28,9 @@ function JobInput(props) {
             value={props.aboutJob}
           ></textarea>
         </div>
-        <button type="submit" className="buttons">Add</button>
+        <button type="submit" className="buttons">
+          Add
+        </button>
       </form>
 
       <div>
