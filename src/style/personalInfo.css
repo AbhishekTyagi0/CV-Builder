@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .inputPersonalInfo {
     max-width: 120px;
     font-size: 8px;

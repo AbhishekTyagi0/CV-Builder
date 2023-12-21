@@ -53,7 +53,7 @@
     font-size: 1.1rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .textInputAreaBox {
     font-size: 0.7rem;
   }
