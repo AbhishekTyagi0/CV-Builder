@@ -3,7 +3,7 @@
   min-width: 35vw;
   background-color: white;
   border-right: 1px solid grey;
-  padding: 2.2rem;
+  padding: 2.1rem;
   overflow: auto;
   margin-top: 60px;
 }
@@ -14,12 +14,11 @@
   min-height: 89vh;
   background-color: white;
   overflow-y: auto;
-  border-radius: 9px;
-  padding: 3rem;
+  padding: 2rem;
   border: 1px solid grey;
   margin: 2rem;
   right: 0%;
-  margin-top: 7rem;
+  margin-top: 5.5rem;
 }
 
 .mainContainer {
@@ -33,6 +32,24 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+}
+
+.heading > button {
+  margin-left: 15rem;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border: 1px solid cadetblue;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  color: cadetblue;
+}
+
+.heading > button:hover {
+  background-color: cadetblue;
+  color: #eee;
+  border-radius: 0%;
 }
 
 @media (max-width: 800px) {
@@ -64,5 +81,16 @@
     padding: 0.5rem;
     margin-top: 1rem;
     padding-top: 1.5rem;
+  }
+
+  .heading > button {
+    margin-left: 3rem;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    border: 1px solid cadetblue;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    color: cadetblue;
   }
 }

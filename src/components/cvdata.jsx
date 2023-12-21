@@ -1,4 +1,11 @@
-import React, { useState } from "react";
+import React, {
+  forwardRef,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from "react";
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
 import Input from "./Input";
 import Cvoutput from "./cvoutput";
 import Experience from "./experience/experiencedata";
@@ -11,7 +18,7 @@ import OutputEducation from "./Education/outputEducation";
 import Skills from "./skills/skills";
 import SkillsOutput from "./skills/skillsoutput";
 
-const CVData = () => {
+const CVData = forwardRef((props, ref) => {
   const [dataValues, setDataValues] = useState({
     fname: "John",
     lname: "Doe",
@@ -79,6 +86,34 @@ const CVData = () => {
     { id: 10, title: "Responsive Design" },
   ]);
 
+  //Download pdf functionality
+
+  const userOutputRef = useRef(null);
+
+  const generatePdf = async () => {
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 500));
+
+      const canvas = await html2canvas(userOutputRef.current, {
+        useCORS: true,
+        scrollY: -window.scrollY,
+        scale: 2,
+      });
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF();
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      pdf.save("user_output.pdf");
+    } catch (error) {
+      console.error("Error generating PDF:", error);
+    }
+  };
+
+  // console.log(userOutputRef.current);
+
+  useImperativeHandle(ref, () => ({ generatePdf }));
+
   return (
     <div className="mainContainer">
       <div className="userInput">
@@ -109,7 +144,7 @@ const CVData = () => {
         />
       </div>
 
-      <div className="userOutput">
+      <div ref={userOutputRef} className="userOutput">
         <Cvoutput
           dataValues={dataValues}
           setDataValues={setDataValues}
@@ -141,6 +176,6 @@ const CVData = () => {
       </div>
     </div>
   );
-};
+});
 
 export default CVData;
