@@ -1,5 +1,5 @@
-import InputEducation from "./inputEducation";
 import { v4 as uuidv4 } from "uuid";
+import InputEducation from "./inputEducation";
 
 export default function Education(props) {
   const inputHandler = (e) => {
@@ -66,7 +66,7 @@ export default function Education(props) {
             inputHandler={inputHandler}
             value={props.education}
           />
-       
+
           <InputEducation
             title="End Date"
             type="date"
@@ -84,7 +84,9 @@ export default function Education(props) {
             value={props.education}
           />
         </div>
-        <button type="submit" className="buttons" >Add</button>
+        <button type="submit" className="buttons">
+          Add
+        </button>
       </form>
 
       <div>

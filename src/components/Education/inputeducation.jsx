@@ -5,8 +5,8 @@ const InputEducation = ({ title, type, name, value, inputHandler }) => {
       <input
         type={type}
         name={name}
-        value={value[name] || ''}
-        onChange={(e) => {  
+        value={value[name] || ""}
+        onChange={(e) => {
           inputHandler(e);
         }}
         className="inputPersonalInfo"
